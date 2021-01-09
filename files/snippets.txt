@@ -1,0 +1,19 @@
+#For POSTGRES DB
+!pip3 install psycopg2
+import psycopg2
+
+conn = psycopg2.connect(
+    host="localhost",
+    database="your-db-name",
+    user="username",
+    password="password")
+    
+#FOR MYSQL DB
+!pip3 install mysql-connector-python
+
+import mysql.connector as msc 
+conn = msc.connect ( 
+    host="localhost",
+    database="your-db-name",
+    user="username",
+    password="password")
